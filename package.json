@@ -10,7 +10,7 @@
     "type": "git",
     "url": "ll"
   },
-  "author": "Lalith",
+  "author": "Praveen",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
