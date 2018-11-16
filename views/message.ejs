@@ -1,0 +1,20 @@
+<body>
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>message</th>
+
+            </tr>
+        </thead>
+         <tbody>
+         <% result.forEach(function (user) { %>
+            <tr>
+                <td><%= user.Patient_name %></td>
+                <td><%= user.message_content %></td>
+
+            </tr>
+         <% }) %>
+         </tbody>
+    </table>
+</body>

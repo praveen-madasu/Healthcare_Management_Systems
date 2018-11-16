@@ -1,0 +1,16 @@
+<body>
+
+
+    <form name="buscador" method="post" action="/lookup">
+      <div >
+          <select name="qualification">
+              <option>Select</option>
+              <% print.forEach(function (user) { %>
+                  <option  > <%= user.qualification_name %></option>
+              <% }) %>
+          </select>
+      <div >
+          <input  type="submit" value="Check" name="submit" >
+      </div>
+  </form>
+</body>

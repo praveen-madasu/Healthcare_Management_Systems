@@ -1,0 +1,32 @@
+<body>
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>Patient Id</th>
+                <th>Email_id</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>DOB</th>
+                <th>Phone</th>
+                <th>Blood Group</th>
+                <th>medical History</th>
+            </tr>
+        </thead>
+         <tbody>
+         <% print.forEach(function (user) { %>
+            <tr>
+                <td><%= user.patient_id %></td>
+                <td><%= user.email_id %></td>
+                <td><%= user.first_name %></td>
+                <td><%= user.middle_name %></td>
+                <td><%= user.last_name %></td>
+                <td><%= user.date_of_birth%></td>
+                <td><%= user.phone_number %></td>
+                <td><%= user.blood_group %></td>
+                <td><%= user.medical_history %></td>
+            </tr>
+         <% }) %>
+         </tbody>
+    </table>
+</body>

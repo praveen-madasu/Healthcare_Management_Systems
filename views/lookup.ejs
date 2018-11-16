@@ -1,0 +1,22 @@
+<body>
+    <table id="table" border="1">
+        <thead>
+            <tr>
+              <th>Full Name</th>
+                <th>Address</th>
+                  <th>Phone Number</th>
+
+            </tr>
+        </thead>
+         <tbody>
+         <% print.forEach(function (user) { %>
+            <tr>
+              <td><%= user.full_name %></td>
+                <td><%= user.Address %></td>
+                  <td><%= user.phone_number %></td>
+
+            </tr>
+         <% }) %>
+         </tbody>
+    </table>
+</body>
